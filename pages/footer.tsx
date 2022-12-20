@@ -1,5 +1,6 @@
 import React from "react";
 import { GoMail } from "react-icons/go";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -75,6 +76,14 @@ function Footer() {
                 </h1>
               </a>
             </h1>
+          </div>
+          <div className="absolute right-40 opacity-20 rotate-[-60deg]">
+            <Image
+              src={"/flower3.png"}
+              alt={"flower"}
+              width={500}
+              height={500}
+            />
           </div>
         </section>
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-// import Line from "../public/line.svg";
 
 function Intro() {
   return (
@@ -10,6 +9,14 @@ function Intro() {
           <div className="h-screen"></div>
         </section>
         <section className="w-10/12 flex justify-center items-center">
+          <div className="absolute left-32 opacity-20 rotate-12">
+            <Image
+              src={"/flower1.png"}
+              alt={"flower"}
+              width={400}
+              height={400}
+            />
+          </div>
           <div className="text-left mt-24 w-4/6">
             <div className="text-7xl text-darkcoffee space-y-5 font-ginebra">
               <h1>Hey!</h1>

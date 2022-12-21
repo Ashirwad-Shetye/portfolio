@@ -1,21 +1,75 @@
-import React from "react";
 import Image from "next/image";
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function About() {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  const variant = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const text = {
+    hidden: {
+      opacity: 0,
+      x: -30,
+    },
+    show: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1.5,
+      },
+    },
+  };
+
+  const image = {
+    hidden: {
+      opacity: 0,
+      x: 30,
+    },
+    show: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+      },
+    },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      control.start("show");
+    }
+  }, [control, inView]);
+
   return (
     <div className="text-black w-screen h-screen snap-center">
       <div className="flex">
         <section className="relative h-full w-2/12">
           <div className="h-screen"></div>
         </section>
-        <section className="w-10/12 flex justify-left items-center">
-          <div className="grid grid-cols-2 place-items-left">
-            <div className="text-left w-5/6">
+        <section className="w-11/12 flex justify-left items-center">
+          <motion.div ref={ref} className="grid grid-cols-2 place-items-left">
+            <motion.div
+              variants={text}
+              animate={control}
+              initial="hidden"
+              className="text-left w-5/6"
+            >
               <div className=" text-darkcoffee space-y-6">
                 <h1 className="text-7xl font-ginebra">About</h1>
                 <h2 className="text-2xl font-raleway tracking-wide">
                   I&apos;m Ashirwad. A focused web developer, designer & a
-                  problem solver.{" "}
+                  problem solver.
                 </h2>
                 <div className="space-y-5">
                   <p className="text-md text-darkcoffee font-raleway tracking-wide">
@@ -48,16 +102,22 @@ function About() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="w-4/6 place-self-center">
+            </motion.div>
+            <motion.div
+              variants={image}
+              animate={control}
+              initial="hidden"
+              className="w-4/6 place-self-center overflow-hidden rounded-3xl "
+            >
               <Image
-                src={"/profile.png"}
+                src={"/profileImage.png"}
                 alt={"profile"}
                 width={614}
                 height={819}
+                className="hover:scale-105 duration-300"
               />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </section>
       </div>
     </div>

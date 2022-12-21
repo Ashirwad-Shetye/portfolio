@@ -117,26 +117,15 @@ a {
 
 
 @layer{
-  /* .underline_anim {
-    line-height: 1;
-  display: inline;
-  margin-top: -20px;
-  background-image: linear-gradient(
-        transparent 50%,
-        #e1fffe 50%,
-        #b0f8ff 85%,
-        transparent 85%,
-        transparent 100%
-    );
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+  .project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 450px;
+    flex-shrink: 0;
+    background-color: rgba(96,56,8, 0.5);
+    border-radius: 1.5rem;
   }
-
-  @keyframes animatedBackground {
-      to {
-          background-size: 100% 100%;
-      }
-  } */
 
 }

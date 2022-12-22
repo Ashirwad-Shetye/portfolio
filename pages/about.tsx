@@ -5,7 +5,8 @@ import { useInView } from "react-intersection-observer";
 
 function About() {
   const control = useAnimation();
-  const [ref, inView] = useInView();
+  const [textRef, textInView] = useInView();
+  const [imageRef, imageInView] = useInView();
 
   const variant = {
     hidden: { opacity: 0 },
@@ -46,24 +47,30 @@ function About() {
   };
 
   useEffect(() => {
-    if (inView) {
+    if (textInView) {
       control.start("show");
     }
-  }, [control, inView]);
+    if (imageInView) {
+      control.start("show");
+    }
+  }, [control, textInView, imageInView]);
 
   return (
-    <div className="text-black w-screen h-screen snap-center">
-      <div className="flex">
-        <section className="relative h-full w-2/12">
-          <div className="h-screen"></div>
+    <div className="w-screen h-fit lg:h-screen">
+      <div className="flex flex-col md:flex-row justify-center md:justify-start items-center">
+        <section className="relative w-full h-32 md:h-full md:w-[200px]">
+          <div className="h-screen w-24"></div>
         </section>
-        <section className="w-11/12 flex justify-left items-center">
-          <motion.div ref={ref} className="grid grid-cols-2 place-items-left">
+        <section className=" w-10/12 flex justify-center md:justify-left items-center">
+          <motion.div
+            ref={textRef}
+            className="grid sm:grid-rows gap-5 md:grid-cols-2 place-items-center md:place-items-left"
+          >
             <motion.div
               variants={text}
               animate={control}
               initial="hidden"
-              className="text-left w-5/6"
+              className="text-left w-11/12 md:w-full  md:place-self-start"
             >
               <div className=" text-darkcoffee space-y-6">
                 <h1 className="text-7xl font-ginebra">About</h1>
@@ -104,10 +111,12 @@ function About() {
               </div>
             </motion.div>
             <motion.div
+              ref={imageRef}
               variants={image}
               animate={control}
               initial="hidden"
-              className="w-4/6 place-self-center overflow-hidden rounded-3xl "
+              className=" w-10/12 md:max-w-4/6 md:min-w-[350px] md:max-w-[400px] 
+              place-self-center overflow-hidden rounded-3xl "
             >
               <Image
                 src={"/profileImage.png"}

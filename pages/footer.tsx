@@ -49,9 +49,9 @@ function Footer() {
   }, [control, inView]);
 
   return (
-    <div className="w-screen h-screen text-black">
-      <div className="flex">
-        <section className="relative h-full w-2/12">
+    <div className=" w-screen min-h-[750px] h-fit lg:h-screen">
+      <div className="flex flex-col md:flex-row justify-center md:justify-start items-center">
+        <section className="relative w-full h-32 md:h-full md:w-2/12 md:max-w-[200px]">
           <div className="h-screen"></div>
         </section>
         <section className="w-10/12 flex flex-col justify-center items-start">
@@ -75,7 +75,7 @@ function Footer() {
               variants={text}
               animate={control}
               initial="hidden"
-              className="mb-10 font-raleway"
+              className="mb-10 font-raleway text-darkcoffee"
             >
               Let&apos;s connect through the platforms below
             </motion.p>
@@ -166,7 +166,8 @@ function Footer() {
             variants={image}
             animate={control}
             initial="hidden"
-            className="absolute right-40 opacity-20 rotate-[-60deg]"
+            className="absolute w-80 right-5 top-40 md:w-96 lg:max-w-[700px] md:top-40 
+              md:right-32 lg:right-40 opacity-20 rotate-[-60deg]"
           >
             <Image
               src={"/flower3.png"}

@@ -4,7 +4,8 @@ import { useInView } from "react-intersection-observer";
 
 function Works() {
   const control = useAnimation();
-  const [ref, inView] = useInView();
+  const [textRef, textInView] = useInView();
+  const [projectRef, projectInView] = useInView();
 
   const variant = {
     hidden: { opacity: 0 },
@@ -25,7 +26,7 @@ function Works() {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 1,
+        duration: 2,
       },
     },
   };
@@ -51,27 +52,30 @@ function Works() {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 1,
+        duration: 2,
       },
     },
   };
 
   useEffect(() => {
-    if (inView) {
+    if (textInView) {
       control.start("show");
     }
-  }, [control, inView]);
+    if (projectInView) {
+      control.start("show");
+    }
+  }, [control, textInView, projectInView]);
 
   return (
-    <div className="">
-      <div className="flex">
-        <section className="relative h-full w-2/12">
+    <div className=" w-screen min-h-[720px] h-fit lg:h-screen">
+      <div className="flex flex-col md:flex-row items-center">
+        <section className=" relative w-full h-32 md:h-full md:w-[200px]">
           <div className="h-screen"></div>
         </section>
-        <section className="relative w-10/12 flex flex-col justify-center items-start">
+        <section className=" w-10/12 flex justify-center md:justify-left items-center">
           <div className="space-y-16 w-full">
             <motion.div
-              ref={ref}
+              ref={textRef}
               animate={control}
               initial="hidden"
               variants={variant}
@@ -87,16 +91,17 @@ function Works() {
               </motion.h1>
             </motion.div>
             <motion.div
+              ref={projectRef}
               variants={slider}
               initial="hidden"
               animate="show"
-              className="flex w-full overflow-x-scroll scrollbar-none gap-10"
+              className="flex mb-20 md:mb-0 w-full overflow-x-scroll scrollbar-none gap-10"
             >
               <motion.div
                 variants={project}
                 initial="hidden"
                 animate="show"
-                className="project"
+                className="project md:w-[450px] md:h-[500px]"
               >
                 asd
               </motion.div>
@@ -104,7 +109,7 @@ function Works() {
                 variants={project}
                 initial="hidden"
                 animate="show"
-                className="project"
+                className="project md:w-[450px] md:h-[500px]"
               >
                 asd
               </motion.div>
@@ -112,7 +117,7 @@ function Works() {
                 variants={project}
                 initial="hidden"
                 animate="show"
-                className="project"
+                className="project md:w-[450px] md:h-[500px]"
               >
                 asd
               </motion.div>
@@ -120,7 +125,7 @@ function Works() {
                 variants={project}
                 initial="hidden"
                 animate="show"
-                className="project"
+                className="project md:w-[450px] md:h-[500px]"
               >
                 asd
               </motion.div>
@@ -128,7 +133,7 @@ function Works() {
                 variants={project}
                 initial="hidden"
                 animate="show"
-                className="project mr-20"
+                className="project md:w-[450px] md:h-[500px] mr-3 md:mr-20"
               >
                 asd
               </motion.div>

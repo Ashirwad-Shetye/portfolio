@@ -12,9 +12,13 @@ module.exports = {
     extend: {
       colors: {
         coffee: "#f5ebe0",
+        // darkcoffee: "#2c1309",
         darkcoffee: "#2c1309",
         midcoffee: "#603808",
         lightcoffee: "#a47148",
+      },
+      backgroundImage: {
+        goalie: "url('/goalie.png')",
       },
     },
   },

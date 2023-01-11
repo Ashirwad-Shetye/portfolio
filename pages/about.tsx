@@ -75,8 +75,8 @@ function About() {
               <div className=" text-darkcoffee space-y-6">
                 <h1 className="text-7xl font-ginebra">About</h1>
                 <h2 className="text-2xl font-raleway tracking-wide">
-                  I&apos;m Ashirwad. A focused web developer, designer & a
-                  problem solver.
+                  I&apos;m Ashirwad. A focused web developer, designer & problem
+                  solver.
                 </h2>
                 <div className="space-y-5">
                   <p className="text-md text-darkcoffee font-raleway tracking-wide">
@@ -123,7 +123,7 @@ function About() {
                 alt={"profile"}
                 width={614}
                 height={819}
-                className="hover:scale-105 duration-300"
+                className="hover:scale-105 grayscale hover:grayscale-0 duration-300"
               />
             </motion.div>
           </motion.div>

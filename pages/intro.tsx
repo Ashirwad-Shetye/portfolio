@@ -37,6 +37,18 @@ function Intro() {
     },
   };
 
+  const stack = {
+    hidden: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 1,
+      },
+    },
+  };
+
   return (
     <div className=" w-screen min-h-[720px] h-fit lg:h-screen">
       <div className="flex flex-col md:flex-row justify-center md:justify-start items-center">
@@ -51,7 +63,7 @@ function Intro() {
         >
           <motion.div
             variants={image}
-            className="absolute right-0 md:right-10 lg:left-0 lg:w-auto lg:max-w-[600px] w-80 md:96 opacity-20 rotate-12"
+            className="absolute right-0 md:right-10 lg:left-0 lg:w-auto lg:max-w-[600px] opacity-10 w-80 md:96 rotate-12"
           >
             <Image
               src={"/flower1.png"}
@@ -68,10 +80,10 @@ function Intro() {
           >
             <motion.div
               variants={text}
-              className="text-7xl text-darkcoffee space-y-5 font-ginebra"
+              className="text-6xl md:text-7xl lg:text-8xl text-darkcoffee space-y-5"
             >
-              <h1>Hey!</h1>
-              <h1>I&apos;m Ashirwad Shetye</h1>
+              <h1 className="font-raleway font-bold">Hey!</h1>
+              <h1 className="font-ginebra">I&apos;m Ashirwad Shetye</h1>
             </motion.div>
             <motion.h2
               variants={text}
@@ -83,9 +95,36 @@ function Intro() {
               variants={text}
               className="text-xl text-darkcoffee font-raleway tracking-wide"
             >
-              Enthusiastic web developer with multiple skills & a creative
-              vision to build beautiful & engaging websites
+              Enthusiastic web developer with multiple skills & creative vision
+              to build beautiful & engaging websites
             </motion.p>
+            <motion.div
+              variants={text}
+              className="my-10 flex space-x-5 items-center"
+            >
+              <motion.div variants={stack} className="w-28">
+                <Image
+                  src={"/mongodb.png"}
+                  alt={"js"}
+                  width={400}
+                  height={400}
+                />
+              </motion.div>
+              <motion.div variants={stack} className="w-24">
+                <Image
+                  src={"/express.png"}
+                  alt={"js"}
+                  width={400}
+                  height={400}
+                />
+              </motion.div>
+              <motion.div variants={stack} className="w-20">
+                <Image src={"/react.png"} alt={"js"} width={400} height={400} />
+              </motion.div>
+              <motion.div variants={stack} className="w-20 mb-1">
+                <Image src={"/node.png"} alt={"js"} width={400} height={400} />
+              </motion.div>
+            </motion.div>
           </motion.div>
         </motion.section>
       </div>

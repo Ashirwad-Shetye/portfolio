@@ -121,11 +121,46 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    width: 350px;
+    width: 250px;
+    height: 300px;
     flex-shrink: 0;
-    background-color: rgba(96,56,8, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 1.5rem;
+    filter: grayscale(0.5);
+    opacity: 0.5;
+    position: relative;
   }
 
+  .project:hover{
+    filter: grayscale(0);
+    scale: 1.1;
+    transition: 300ms;
+  }
+
+  .one{
+    background-image: url("/images/01.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .two{
+    background-image: url("/images/02.png");
+    background-position: left;
+    background-size: cover;
+  }
+  .three{
+    background-image: url("/images/03.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .four{
+    background-image: url("/images/04.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .five{
+    background-image: url("/images/05.png");
+    background-position: center;
+    background-size: cover;
+  }
 }

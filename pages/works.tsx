@@ -102,19 +102,29 @@ function Works() {
                 variants={project}
                 initial="hidden"
                 animate="show"
-                className="project one m-10 md:w-[350px] md:h-[400px]"
+                className="project one m-10 md:w-[350px] md:h-[400px] hover:shadow-lg"
               >
                 <div
-                  className="absolute bottom-0 w-full bg-gradient-to-t from-midcoffee to-transparent rounded-b-3xl h-20 md:h-24
+                  className="w-full bg-midcoffee h-full opacity-0 hover:opacity-90 duration-300
                 flex items-center"
                 >
-                  <div className="pl-5 flex space-x-16 items-center">
-                    <button className="h-10 absolute left-5 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                      Website
-                    </button>
-                    <button className="h-10 absolute right-5 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                      GitHub
-                    </button>
+                  <div className="flex flex-col font-raleway space-y-5 justify-center items-center w-full">
+                    <h1 className="text-center mx-5">
+                      Goalie is a Fullstack goal management platform built using
+                      MERN stack
+                    </h1>
+                    <h1 className="text-center mx-5">
+                      Tech: ReactJs, Redux, Mongodb, Tailwindcss, Express,
+                      Flowbite
+                    </h1>
+                    <div className="w-full py-5 flex justify-around">
+                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
+                        Website
+                      </button>
+                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
+                        GitHub
+                      </button>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -122,19 +132,29 @@ function Works() {
                 variants={project}
                 initial="hidden"
                 animate="show"
-                className="project two m-10 md:w-[350px] md:h-[400px]"
+                className="project two m-10 md:w-[350px] md:h-[400px] hover:shadow-lg"
               >
                 <div
-                  className="absolute bottom-0 w-full bg-gradient-to-t from-midcoffee to-transparent rounded-b-3xl h-20 md:h-24
+                  className="w-full bg-midcoffee h-full opacity-0 hover:opacity-90 duration-300
                 flex items-center"
                 >
-                  <div className="pl-5 flex space-x-16 items-center">
-                    <button className="h-10 absolute left-5 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                      Website
-                    </button>
-                    <button className="h-10 absolute right-5 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                      GitHub
-                    </button>
+                  <div className="flex flex-col font-raleway space-y-5 justify-center items-center w-full">
+                    <h1 className="text-center mx-5">
+                      Goalie is a Fullstack goal management platform built using
+                      MERN stack
+                    </h1>
+                    <h1 className="text-center mx-5">
+                      Tech: ReactJs, Redux, Mongodb, Tailwindcss, Express,
+                      Flowbite
+                    </h1>
+                    <div className="w-full py-5 flex justify-around">
+                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
+                        Website
+                      </button>
+                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
+                        GitHub
+                      </button>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -142,19 +162,29 @@ function Works() {
                 variants={project}
                 initial="hidden"
                 animate="show"
-                className="project three m-10 md:w-[350px] md:h-[400px]"
+                className="project three m-10 md:w-[350px] md:h-[400px] hover:shadow-lg"
               >
                 <div
-                  className="absolute bottom-0 w-full bg-gradient-to-t from-midcoffee to-transparent rounded-b-3xl h-20 md:h-24
+                  className="w-full bg-midcoffee h-full opacity-0 hover:opacity-90 duration-300
                 flex items-center"
                 >
-                  <div className="pl-5 flex space-x-16 items-center">
-                    <button className="h-10 absolute left-5 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                      Website
-                    </button>
-                    <button className="h-10 absolute right-5 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                      GitHub
-                    </button>
+                  <div className="flex flex-col font-raleway space-y-5 justify-center items-center w-full">
+                    <h1 className="text-center mx-5">
+                      Goalie is a Fullstack goal management platform built using
+                      MERN stack
+                    </h1>
+                    <h1 className="text-center mx-5">
+                      Tech: ReactJs, Redux, Mongodb, Tailwindcss, Express,
+                      Flowbite
+                    </h1>
+                    <div className="w-full py-5 flex justify-around">
+                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
+                        Website
+                      </button>
+                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
+                        GitHub
+                      </button>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -162,39 +192,29 @@ function Works() {
                 variants={project}
                 initial="hidden"
                 animate="show"
-                className="project four m-10 md:w-[350px] md:h-[400px]"
+                className="project four m-10 md:w-[350px] md:h-[400px] hover:shadow-lg"
               >
                 <div
-                  className="absolute bottom-0 w-full bg-gradient-to-t from-midcoffee to-transparent rounded-b-3xl h-20 md:h-24
+                  className="w-full bg-midcoffee h-full opacity-0 hover:opacity-90 duration-300
                 flex items-center"
                 >
-                  <div className="pl-5 flex space-x-16 items-center">
-                    <button className="h-10 absolute left-5 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                      Website
-                    </button>
-                    <button className="h-10 absolute right-5 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                      GitHub
-                    </button>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div
-                variants={project}
-                initial="hidden"
-                animate="show"
-                className="project five m-10 md:w-[350px] md:h-[400px]"
-              >
-                <div
-                  className="absolute bottom-0 w-full bg-gradient-to-t from-midcoffee to-transparent rounded-b-3xl h-20 md:h-24
-                flex items-center"
-                >
-                  <div className="pl-5 flex space-x-16 items-center">
-                    <button className="h-10 absolute left-5 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                      Website
-                    </button>
-                    <button className="h-10 absolute right-5 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                      GitHub
-                    </button>
+                  <div className="flex flex-col font-raleway space-y-5 justify-center items-center w-full">
+                    <h1 className="text-center mx-5">
+                      Goalie is a Fullstack goal management platform built using
+                      MERN stack
+                    </h1>
+                    <h1 className="text-center mx-5">
+                      Tech: ReactJs, Redux, Mongodb, Tailwindcss, Express,
+                      Flowbite
+                    </h1>
+                    <div className="w-full py-5 flex justify-around">
+                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
+                        Website
+                      </button>
+                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
+                        GitHub
+                      </button>
+                    </div>
                   </div>
                 </div>
               </motion.div>

@@ -5,6 +5,7 @@ import About from "./about";
 import Works from "./works";
 import Footer from "./footer";
 import { IoChevronUpSharp } from "react-icons/io5";
+import Skill from "./skill";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -69,7 +70,7 @@ export default function Home() {
             <div className=" bg-midcoffee min-w-36 w-3/12 md:w-0.5 my-auto md:my-16 h-0.5 md:h-40 ml-10 md:mx-auto "></div>
             <div className=" md:visible invisible absolute bottom-0 w-full h-40 text-center">
               <h1 className="text-lg text-lightcoffee md:-rotate-90 md:mt-10 select-none cursor-default">
-                @2022
+                @2023
               </h1>
             </div>
           </div>
@@ -80,6 +81,9 @@ export default function Home() {
           </div>
           <div id="about">
             <About />
+          </div>
+          <div id="skills">
+            <Skill />
           </div>
           <div id="works">
             <Works />

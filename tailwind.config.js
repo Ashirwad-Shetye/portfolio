@@ -8,6 +8,7 @@ module.exports = {
     fontFamily: {
       ginebra: ["Ginebra", "sans-serif"],
       raleway: ["Raleway", "sans-serif"],
+      emelia: ["emelia", "sans-serif"],
     },
     extend: {
       colors: {

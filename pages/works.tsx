@@ -275,7 +275,7 @@ function Works() {
                 animate="show"
                 className="project m-10 md:w-[350px] md:h-[400px] hover:shadow-lg hover:bg-coffee flex flex-col"
               >
-                <div className="five w-full h-4/6"></div>
+                <div className="six w-full h-4/6"></div>
                 <div className="w-full h-2/6 font-raleway text-darkcoffee">
                   <div className="w-full text-sm pt-2">
                     <h1 className="text-center mx-5 pb-1">

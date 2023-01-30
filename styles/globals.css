@@ -162,4 +162,9 @@ a {
     background-position: center;
     background-size: cover;
   }
+  .six{
+    background-image: url("/images/projects/06.png");
+    background-position: top;
+    background-size: cover;
+  }
 }

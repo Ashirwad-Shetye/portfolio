@@ -16,6 +16,12 @@ export default function Home() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const scrollSkills = () => {
+    const element = document.getElementById("skills");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const scrollWork = () => {
     const element = document.getElementById("works");
     if (element) {
@@ -46,7 +52,7 @@ export default function Home() {
         <section className=" fixed flex items-center z-50 lg:justify-center lg:left-0 lg:h-full w-full h-24 md:h-full md:w-[200px]">
           <div className="relative bg-white md:bg-transparent w-full flex h-24 flex-col md:h-screen ">
             <div className="bord absolute right-5 md:right-0 md:top-10 md:relative flex items-center md:block h-24 z-10 md:h-80 ">
-              <ul className="bo text-center text-midcoffee text-md md:mt-44 space-x-5 font-raleway flex md:-rotate-90 h-fit">
+              <ul className="text-center text-midcoffee md:mt-64 space-x-5 font-raleway flex md:-rotate-90 h-fit">
                 <li
                   onClick={scrollContact}
                   className="cursor-pointer flex items-center px-1 hover:italic duration-300"
@@ -60,6 +66,12 @@ export default function Home() {
                   PROJECTS
                 </li>
                 <li
+                  onClick={scrollSkills}
+                  className="cursor-pointer flex items-center px-1 hover:italic duration-300"
+                >
+                  SKILLS
+                </li>
+                <li
                   onClick={scrollAbout}
                   className="cursor-pointer flex items-center px-1 hover:italic duration-300"
                 >
@@ -67,9 +79,9 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className=" bg-midcoffee min-w-36 w-3/12 md:w-0.5 my-auto md:my-16 h-0.5 md:h-40 ml-10 md:mx-auto "></div>
+            {/* <div className=" bg-midcoffee min-w-36 w-3/12 md:w-0.5 my-auto md:my-16 h-0.5 md:h-40 ml-10 md:mx-auto "></div> */}
             <div className=" md:visible invisible absolute bottom-0 w-full h-40 text-center">
-              <h1 className="text-lg text-lightcoffee md:-rotate-90 md:mt-10 select-none cursor-default">
+              <h1 className="text-lightcoffee md:-rotate-90 md:mt-10 select-none cursor-default">
                 @2023
               </h1>
             </div>

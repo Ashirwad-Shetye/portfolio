@@ -215,7 +215,7 @@ function Works() {
                       Portfolio to showcase my skills and projects.
                     </h1>
                     <h1 className="text-center mx-5 text-gray-500">
-                      NextJs, Tailwindcss, vercel, flowbite, framer-motion
+                      NextJs, Tailwindcss, Vercel, flowbite, framer-motion
                     </h1>
                   </div>
                   <div className="w-full absolute bottom-2 flex justify-between text-sm">

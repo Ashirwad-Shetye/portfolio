@@ -116,7 +116,7 @@ function About() {
               animate={control}
               initial="hidden"
               className=" w-10/12 md:max-w-4/6 md:min-w-[350px] md:max-w-[400px] 
-              place-self-center overflow-hidden rounded-3xl "
+              place-self-center overflow-hidden hover:shadow-xl"
             >
               <Image
                 src={"/profileImage.png"}

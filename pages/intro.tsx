@@ -1,8 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 function Intro() {
+  const scrollProgress = useScroll();
+  const y = scrollProgress;
+
   const variants = {
     hidden: { opacity: 0 },
     show: {

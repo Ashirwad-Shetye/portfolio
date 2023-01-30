@@ -98,7 +98,8 @@ function Works() {
               variants={slider}
               initial="hidden"
               animate="show"
-              className="flex mb-20 md:mb-0 w-full overflow-x-scroll scrollbar-none"
+              className="flex mb-20 md:mb-0 w-full overflow-x-scroll scrollbar-thumb-midcoffee scrollbar-track-coffee
+               scrollbar-thin scrollbar-thumb-rounded scrollbar-track-rounded"
             >
               <motion.div
                 variants={project}

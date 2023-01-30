@@ -3,6 +3,7 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { CgWebsite } from "react-icons/cg";
 import { AiFillGithub } from "react-icons/ai";
+import Link from "next/link";
 
 function Works() {
   const control = useAnimation();
@@ -119,19 +120,27 @@ function Works() {
                     </h1>
                   </div>
                   <div className="w-full absolute bottom-2 flex justify-between text-sm">
-                    <button
+                    <Link
+                      href={"https://goalietask.netlify.app/"}
+                      target="_blank"
+                      rel="noopener"
                       className="h-8 ml-2 flex items-center text-darkcoffee 
                     font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
                     >
                       <CgWebsite className="mr-2 text-xl font-normal" /> Website
-                    </button>
-                    <button
+                    </Link>
+                    <Link
+                      href={
+                        "https://github.com/Ashirwad-Shetye/Goalie-frontend/tree/master"
+                      }
+                      target="_blank"
+                      rel="noopener"
                       className="h-8 mr-2 flex items-center text-darkcoffee 
                     font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
                     >
                       <AiFillGithub className="mr-2 text-xl font-normal" />
                       GitHub
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
@@ -153,19 +162,25 @@ function Works() {
                     </h1>
                   </div>
                   <div className="w-full absolute bottom-2 flex justify-between text-sm">
-                    <button
+                    <Link
+                      href={"https://amazon-clone-ashirwad-shetye.vercel.app/"}
+                      target="_blank"
+                      rel="noopener"
                       className="h-8 ml-2 flex items-center text-darkcoffee 
                     font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
                     >
                       <CgWebsite className="mr-2 text-xl font-normal" /> Website
-                    </button>
-                    <button
+                    </Link>
+                    <Link
+                      href={"https://github.com/Ashirwad-Shetye/amazon-clone"}
+                      target="_blank"
+                      rel="noopener"
                       className="h-8 mr-2 flex items-center text-darkcoffee 
                     font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
                     >
                       <AiFillGithub className="mr-2 text-xl font-normal" />
                       GitHub
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
@@ -186,19 +201,25 @@ function Works() {
                     </h1>
                   </div>
                   <div className="w-full absolute bottom-2 flex justify-between text-sm">
-                    <button
+                    <Link
+                      href={"https://weather-app.ashirwadshetye.com/"}
+                      target="_blank"
+                      rel="noopener"
                       className="h-8 ml-2 flex items-center text-darkcoffee 
                     font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
                     >
                       <CgWebsite className="mr-2 text-xl font-normal" /> Website
-                    </button>
-                    <button
+                    </Link>
+                    <Link
+                      href={"https://github.com/Ashirwad-Shetye/Weather_app"}
+                      target="_blank"
+                      rel="noopener"
                       className="h-8 mr-2 flex items-center text-darkcoffee 
                     font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
                     >
                       <AiFillGithub className="mr-2 text-xl font-normal" />
                       GitHub
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
@@ -219,19 +240,25 @@ function Works() {
                     </h1>
                   </div>
                   <div className="w-full absolute bottom-2 flex justify-between text-sm">
-                    <button
+                    <Link
+                      href={"https://ashirwadshetye.com/"}
+                      target="_blank"
+                      rel="noopener"
                       className="h-8 ml-2 flex items-center text-darkcoffee 
                     font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
                     >
                       <CgWebsite className="mr-2 text-xl font-normal" /> Website
-                    </button>
-                    <button
+                    </Link>
+                    <Link
+                      href={"https://github.com/Ashirwad-Shetye/portfolio"}
+                      target="_blank"
+                      rel="noopener"
                       className="h-8 mr-2 flex items-center text-darkcoffee 
                     font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
                     >
                       <AiFillGithub className="mr-2 text-xl font-normal" />
                       GitHub
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
@@ -253,19 +280,29 @@ function Works() {
                     </h1>
                   </div>
                   <div className="w-full absolute bottom-2 flex justify-between text-sm">
-                    <button
+                    <Link
+                      href={
+                        "https://rock-paper-scissor-by-ashirwadshetye.vercel.app/"
+                      }
+                      target="_blank"
+                      rel="noopener"
                       className="h-8 ml-2 flex items-center text-darkcoffee 
                     font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
                     >
                       <CgWebsite className="mr-2 text-xl font-normal" /> Website
-                    </button>
-                    <button
+                    </Link>
+                    <Link
+                      href={
+                        "https://github.com/Ashirwad-Shetye/rock_paper_scissor_using_nextjs"
+                      }
+                      target="_blank"
+                      rel="noopener"
                       className="h-8 mr-2 flex items-center text-darkcoffee 
                     font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
                     >
                       <AiFillGithub className="mr-2 text-xl font-normal" />
                       GitHub
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </motion.div>

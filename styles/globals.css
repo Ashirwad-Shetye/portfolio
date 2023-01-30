@@ -127,7 +127,6 @@ a {
     flex-shrink: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 1.5rem;
     opacity: 0.5;
     position: relative;
     overflow: hidden;

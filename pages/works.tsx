@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { CgWebsite } from "react-icons/cg";
+import { AiFillGithub } from "react-icons/ai";
 
 function Works() {
   const control = useAnimation();
@@ -102,13 +104,13 @@ function Works() {
                 variants={project}
                 initial="hidden"
                 animate="show"
-                className="project one m-10 md:w-[350px] md:h-[400px] hover:shadow-lg"
+                className="project m-10 md:w-[350px] md:h-[400px] hover:shadow-lg hover:bg-coffee flex flex-col"
               >
-                <div
-                  className="w-full bg-midcoffee h-full opacity-0 hover:opacity-90 duration-300
-                flex items-center"
-                >
-                  <div className="flex flex-col font-raleway space-y-5 justify-center items-center w-full">
+                <div className="overflow-hidden w-full h-4/6">
+                  <div className="h-full w-full one hover:scale-110 duration-300"></div>
+                </div>
+                <div className="w-full h-2/6 font-raleway text-darkcoffee">
+                  <div className="w-full text-sm">
                     <h1 className="text-center mx-5">
                       Goalie is a Fullstack goal management platform built using
                       MERN stack
@@ -117,14 +119,21 @@ function Works() {
                       Tech: ReactJs, Redux, Mongodb, Tailwindcss, Express,
                       Flowbite
                     </h1>
-                    <div className="w-full py-5 flex justify-around">
-                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                        Website
-                      </button>
-                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                        GitHub
-                      </button>
-                    </div>
+                  </div>
+                  <div className="w-full absolute bottom-2 flex justify-between text-sm">
+                    <button
+                      className="h-8 ml-2 flex items-center text-darkcoffee 
+                    font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
+                    >
+                      <CgWebsite className="mr-2 text-xl font-normal" /> Website
+                    </button>
+                    <button
+                      className="h-8 mr-2 flex items-center text-darkcoffee 
+                    font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
+                    >
+                      <AiFillGithub className="mr-2 text-xl font-normal" />
+                      GitHub
+                    </button>
                   </div>
                 </div>
               </motion.div>
@@ -132,13 +141,13 @@ function Works() {
                 variants={project}
                 initial="hidden"
                 animate="show"
-                className="project two m-10 md:w-[350px] md:h-[400px] hover:shadow-lg"
+                className="project m-10 md:w-[350px] md:h-[400px] hover:shadow-lg hover:bg-coffee flex flex-col"
               >
-                <div
-                  className="w-full bg-midcoffee h-full opacity-0 hover:opacity-90 duration-300
-                flex items-center"
-                >
-                  <div className="flex flex-col font-raleway space-y-5 justify-center items-center w-full">
+                <div className="overflow-hidden w-full h-4/6">
+                  <div className="h-full w-full two hover:scale-110 duration-300"></div>
+                </div>
+                <div className="w-full h-2/6 font-raleway text-darkcoffee">
+                  <div className="w-full text-sm">
                     <h1 className="text-center mx-5">
                       Goalie is a Fullstack goal management platform built using
                       MERN stack
@@ -147,14 +156,21 @@ function Works() {
                       Tech: ReactJs, Redux, Mongodb, Tailwindcss, Express,
                       Flowbite
                     </h1>
-                    <div className="w-full py-5 flex justify-around">
-                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                        Website
-                      </button>
-                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                        GitHub
-                      </button>
-                    </div>
+                  </div>
+                  <div className="w-full absolute bottom-2 flex justify-between text-sm">
+                    <button
+                      className="h-8 ml-2 flex items-center text-darkcoffee 
+                    font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
+                    >
+                      <CgWebsite className="mr-2 text-xl font-normal" /> Website
+                    </button>
+                    <button
+                      className="h-8 mr-2 flex items-center text-darkcoffee 
+                    font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
+                    >
+                      <AiFillGithub className="mr-2 text-xl font-normal" />
+                      GitHub
+                    </button>
                   </div>
                 </div>
               </motion.div>
@@ -162,13 +178,13 @@ function Works() {
                 variants={project}
                 initial="hidden"
                 animate="show"
-                className="project three m-10 md:w-[350px] md:h-[400px] hover:shadow-lg"
+                className="project m-10 md:w-[350px] md:h-[400px] hover:shadow-lg hover:bg-coffee flex flex-col"
               >
-                <div
-                  className="w-full bg-midcoffee h-full opacity-0 hover:opacity-90 duration-300
-                flex items-center"
-                >
-                  <div className="flex flex-col font-raleway space-y-5 justify-center items-center w-full">
+                <div className="overflow-hidden w-full h-4/6">
+                  <div className="h-full w-full three hover:scale-110 duration-300"></div>
+                </div>
+                <div className="w-full h-2/6 font-raleway text-darkcoffee">
+                  <div className="w-full text-sm">
                     <h1 className="text-center mx-5">
                       Goalie is a Fullstack goal management platform built using
                       MERN stack
@@ -177,14 +193,21 @@ function Works() {
                       Tech: ReactJs, Redux, Mongodb, Tailwindcss, Express,
                       Flowbite
                     </h1>
-                    <div className="w-full py-5 flex justify-around">
-                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                        Website
-                      </button>
-                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                        GitHub
-                      </button>
-                    </div>
+                  </div>
+                  <div className="w-full absolute bottom-2 flex justify-between text-sm">
+                    <button
+                      className="h-8 ml-2 flex items-center text-darkcoffee 
+                    font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
+                    >
+                      <CgWebsite className="mr-2 text-xl font-normal" /> Website
+                    </button>
+                    <button
+                      className="h-8 mr-2 flex items-center text-darkcoffee 
+                    font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
+                    >
+                      <AiFillGithub className="mr-2 text-xl font-normal" />
+                      GitHub
+                    </button>
                   </div>
                 </div>
               </motion.div>
@@ -192,13 +215,13 @@ function Works() {
                 variants={project}
                 initial="hidden"
                 animate="show"
-                className="project four m-10 md:w-[350px] md:h-[400px] hover:shadow-lg"
+                className="project m-10 md:w-[350px] md:h-[400px] hover:shadow-lg hover:bg-coffee flex flex-col"
               >
-                <div
-                  className="w-full bg-midcoffee h-full opacity-0 hover:opacity-90 duration-300
-                flex items-center"
-                >
-                  <div className="flex flex-col font-raleway space-y-5 justify-center items-center w-full">
+                <div className="overflow-hidden w-full h-4/6">
+                  <div className="h-full w-full four hover:scale-110 duration-300"></div>
+                </div>
+                <div className="w-full h-2/6 font-raleway text-darkcoffee">
+                  <div className="w-full text-sm">
                     <h1 className="text-center mx-5">
                       Goalie is a Fullstack goal management platform built using
                       MERN stack
@@ -207,14 +230,21 @@ function Works() {
                       Tech: ReactJs, Redux, Mongodb, Tailwindcss, Express,
                       Flowbite
                     </h1>
-                    <div className="w-full py-5 flex justify-around">
-                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                        Website
-                      </button>
-                      <button className="h-10 text-coffee font-raleway px-2 rounded-xl border-2 border-coffee hover:bg-coffee hover:text-darkcoffee ">
-                        GitHub
-                      </button>
-                    </div>
+                  </div>
+                  <div className="w-full absolute bottom-2 flex justify-between text-sm">
+                    <button
+                      className="h-8 ml-2 flex items-center text-darkcoffee 
+                    font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
+                    >
+                      <CgWebsite className="mr-2 text-xl font-normal" /> Website
+                    </button>
+                    <button
+                      className="h-8 mr-2 flex items-center text-darkcoffee 
+                    font-raleway px-2 hover:font-bold duration-200 hover:scale-110 "
+                    >
+                      <AiFillGithub className="mr-2 text-xl font-normal" />
+                      GitHub
+                    </button>
                   </div>
                 </div>
               </motion.div>

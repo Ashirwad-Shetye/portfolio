@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function Intro() {
-  const scrollProgress = useScroll();
-  const y = scrollProgress;
+  let { scrollYProgress } = useScroll();
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   const variants = {
     hidden: { opacity: 0 },
@@ -66,6 +66,7 @@ function Intro() {
         >
           <motion.div
             variants={image}
+            style={{ y }}
             className="absolute right-0 md:right-10 lg:left-0 lg:w-auto lg:max-w-[600px] opacity-10 w-80 md:96 rotate-12"
           >
             <Image

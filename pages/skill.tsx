@@ -67,90 +67,24 @@ function Skill() {
               initial="hidden"
               className="mb-10 font-raleway text-darkcoffee"
             >
-              Let&apos;s connect through the platforms below
+              I have been working with following tech:
             </motion.p>
             <div className="flex">
-              <ul className="space-y-5 text-lg font-raleway text-darkcoffee">
-                <motion.li
-                  variants={text}
-                  animate={control}
-                  initial="hidden"
-                  className="hover:scale-110 duration-200 underline hover:line-through"
-                >
-                  <a
-                    href="https://www.linkedin.com/in/ashirwadshetye/"
-                    target="_blank"
-                    rel="noopener, noreferrer"
-                  >
-                    LinkedIn
-                  </a>
-                </motion.li>
-                <motion.li
-                  variants={text}
-                  animate={control}
-                  initial="hidden"
-                  className="hover:scale-110 duration-200 underline hover:line-through"
-                >
-                  <a
-                    href="https://github.com/Ashirwad-Shetye"
-                    target="_blank"
-                    rel="noopener, noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </motion.li>
-                <motion.li
-                  variants={text}
-                  animate={control}
-                  initial="hidden"
-                  className="hover:scale-110 duration-200 underline hover:line-through"
-                >
-                  <a
-                    href="https://twitter.com/Ashirwad98"
-                    target="_blank"
-                    rel="noopener, noreferrer"
-                  >
-                    Twitter
-                  </a>
-                </motion.li>
-                <motion.li
-                  variants={text}
-                  animate={control}
-                  initial="hidden"
-                  className="hover:scale-110 duration-200 underline hover:line-through"
-                >
-                  <a
-                    href="https://www.instagram.com/ashirwadshetye/"
-                    target="_blank"
-                    rel="noopener, noreferrer"
-                  >
-                    Instagram
-                  </a>
-                </motion.li>
-              </ul>
-            </div>
-          </motion.div>
-          <motion.div
-            variants={text}
-            animate={control}
-            initial="hidden"
-            className="my-10 text-lg font-raleway text-darkcoffee"
-          >
-            <h1 className="hover:scale-105 duration-200 ">
-              <a
-                href="mailto:ashirwadpramodshetye@gmail.com"
-                className="flex space-x-5 items-center"
-                target="_blank"
-                rel="noopener, noreferrer"
+              <motion.ul
+                variants={text}
+                animate={control}
+                initial="hidden"
+                className="space-y-5 text-lg font-raleway text-darkcoffee"
               >
-                <h1 className="text-2xl">
-                  <GoMail />
-                </h1>
-                <h1 className=" underline hover:line-through">
-                  ashirwadpramodshetye@gmail.com
-                </h1>
-              </a>
-            </h1>
+                <li>TypeScript</li>
+                <li>Node.js</li>
+                <li>TailwindCss</li>
+                <li>ReactJs along with NextJs framework</li>
+                <li>MongoDb & SQL</li>
+                <li>Redux and Redux toolkit</li>
+                <li>Test: Jest, React Testing Library</li>
+              </motion.ul>
+            </div>
           </motion.div>
         </section>
       </div>

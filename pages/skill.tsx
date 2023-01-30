@@ -18,16 +18,6 @@ function Skill() {
     },
   };
 
-  const image = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 0.2,
-      transition: {
-        duration: 3,
-      },
-    },
-  };
-
   const text = {
     hidden: {
       opacity: 0,
@@ -161,20 +151,6 @@ function Skill() {
                 </h1>
               </a>
             </h1>
-          </motion.div>
-          <motion.div
-            variants={image}
-            animate={control}
-            initial="hidden"
-            className="absolute w-80 right-5 top-40 md:w-96 lg:max-w-[700px] md:top-40 
-              md:right-32 lg:right-40 opacity-20 rotate-[-60deg]"
-          >
-            <Image
-              src={"/flower3.png"}
-              alt={"flower"}
-              width={500}
-              height={500}
-            />
           </motion.div>
         </section>
       </div>
